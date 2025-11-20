@@ -4,8 +4,7 @@ import java.util.Arrays;
 
 public class H2_main {
     public static void main(String[] args) {
-        int n = 48889, digits = 1;
-        int b = n;
+        int n = 0, digits = 1;
         int [] a = {0, 0, 0, 0, 0, 0, 0, 0, 0};
         digits = 1;
         for (int i = n/10; i > 1; i = i/10){
@@ -15,7 +14,6 @@ public class H2_main {
             a[i] = n%10;
             n /= 10;
         }
-        int c = 0;
         System.out.println(digits);
         System.out.println(Arrays.toString(a));
     }
