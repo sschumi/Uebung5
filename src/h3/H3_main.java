@@ -1,9 +1,7 @@
 package h3;
 
-
 import java.lang.reflect.Array;
 import java.util.Arrays;
-
 
 public class H3_main {
     public static void main(String[] args) {
@@ -34,7 +32,6 @@ public class H3_main {
             einheiten[1][i] = a / einheiten[0][i];
             a -= (einheiten[1][i] * einheiten[0][i]);
         }
-
 
         for (int i = 0; i < einheiten[1].length; i++) {
             System.out.print(einheiten[1][i] + " ");
